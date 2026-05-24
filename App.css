@@ -1,0 +1,82 @@
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+/* 1. تصفير الستايل وتجهيز الخلفية البيضاء */
+#root {
+  width: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #ffffff; /* خلفية بيضاء للشاشة كلها */
+}
+
+body {
+  margin: 0;
+  background-color: #ffffff; /* تأكيد اللون الأبيض */
+  font-family: 'Inter', sans-serif;
+  color: #000000; /* الكتابة الأساسية سودة */
+}
+
+/* 2. الكارت (هيكون لونه رمادي فاتح جداً أو أبيض عشان يبان) */
+.card {
+  background-color: #f3f3f3; /* رمادي فاتح عشان يحدد مكان الكارت */
+  padding: 40px;
+  border-radius: 12px;
+  text-align: center;
+  width: 320px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* ضل خفيف عشان الكارت يظهر */
+}
+
+/* 3. تنسيق صورتك */
+.avatar {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  margin-bottom: 24px;
+  object-fit: cover;
+  border: 1px solid #ddd;
+}
+
+/* 4. الكتابة بالأسود */
+h1 {
+  color: #000000 !important; /* اسمك بالأسود */
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+h2 {
+  color: #555555 !important; /* المدينة برمادي غامق */
+  font-size: 14px;
+  margin-bottom: 24px;
+}
+
+p {
+  color: #000000; /* الوصف بالأسود */
+  font-size: 14px;
+  margin-bottom: 24px;
+}
+
+/* 5. الزراير (زي ما طلبت زي ما هي) */
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.links button {
+  background-color: #333333; /* الزراير غامقة */
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* حركة الماوس على الزرار يقلب أخضر فسفوري */
+.links button:hover {
+  background-color: #c5f82a; 
+  color: #000000; 
+}
